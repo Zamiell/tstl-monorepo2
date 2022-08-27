@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+
+    // Needed since this is a library.
+    "declaration": true,
+
+    // Recommended as per TypeScriptToLua:
+    // https://typescripttolua.github.io/docs/getting-started
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "Node",
+    "types": ["lua-types/5.3"],
+    "strict": true,
+  },
+
+  "include": ["./src/**/*.ts"],
+
+  "tstl": {
+    "luaTarget": "5.3"
+  }
+}
